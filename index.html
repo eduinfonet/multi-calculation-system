@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator | Created by Samiul Alim Khan.</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="container bg-dark">
+    <br /><br />
+    <!-- Simple Calculator -->
+    <div class="d-flex justify-content-center" data-aos="flip-left">
+      <h1>Simple Calculator.</h1>
+    </div>
+    <br />
+    <div class="d-flex justify-content-center" data-aos="zoom-in">
+      <button class="button2" onclick="calculator()">Simple Calculator</button>
+    </div>
+    <br />
+    <hr />
+    <br /><br />
+    <!-- Banking calculator. -->
+    <div class="d-flex justify-content-center" data-aos="fade-right">
+      <h1>Banking Calculator.</h1>
+    </div>
+    <br />
+    <div class="row" data-aos="fade-left">
+      <!-- First col -->
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <button class="button2" onclick="simpleProfit()">
+          Check your profit
+        </button>
+        <br />
+        <!-- - -->
+        <button class="button2" onclick="totalAmount()">
+          Check your total amount
+        </button>
+        <br />
+      </div>
+      <!-- Second Coloumn -->
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <button class="button2" onclick="principal()">
+          Check your principal
+        </button>
+        <br />
+        <!-- - -->
+        <button class="button2" onclick="time()">Check your time</button>
+        <br />
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <button class="button2" onclick="rateOfInterest()">
+          Check your rate of interest
+        </button>
+        <br />
+      </div>
+    </div>
+    <hr />
+    <br /><br />
+    <!-- Temperature Converter -->
+    <div class="d-flex justify-content-center" data-aos="fade-up">
+      <h1>Temperature Converter.</h1>
+    </div>
+    <br />
+    <div class="row">
+      <div
+        class="
+          col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6
+          d-flex
+          justify-content-center
+        "
+        data-aos="fade-right"
+      >
+        <button class="button2" onclick="fahToCelsius()">
+          Fahrenheit to Celcius
+        </button>
+        <br />
+      </div>
+      <div
+        class="
+          col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6
+          d-flex
+          justify-content-center
+        "
+        data-aos="fade-left"
+      >
+        <button class="button2" onclick="celsiusToFah()">
+          Celcius to Fahrenheit
+        </button>
+        <br />
+      </div>
+    </div>
+    <hr />
+    <br /><br />
+    <!-- Currency Converter -->
+    <div class="d-flex justify-content-center" data-aos="fade-down">
+      <h1>Currency Converter.</h1>
+    </div>
+    <br />
+    <div class="row">
+      <!-- First Column -->
+      <div
+        class="
+          col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6
+          d-flex
+          justify-content-center
+        "
+        data-aos="fade-right"
+      >
+        <button class="button2" onclick="bdtToUsd()">BTD to USD</button>
+        <br />
+      </div>
+      <!-- Second column -->
+      <div
+        class="
+          col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6
+          d-flex
+          justify-content-center
+        "
+        data-aos="fade-left"
+      >
+        <button class="button2" onclick="usdToBdt()">USD to BDT</button>
+        <br />
+      </div>
+    </div>
+    <hr />
+    <br /><br />
+    <!-- Length Converter -->
+    <div class="d-flex justify-content-center" data-aos="fade-up">
+      <h1>Length Converter.</h1>
+    </div>
+    <br />
+    <div class="row">
+      <div
+        class="
+          col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6
+          d-flex
+          justify-content-center
+        "
+        data-aos="fade-right"
+      >
+        <button class="button2" onclick="meterToFt()">Meter to Feet</button>
+        <br />
+      </div>
+      <div
+        class="
+          col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6
+          d-flex
+          justify-content-center
+        "
+        data-aos="fade-left"
+      >
+        <button class="button2" onclick="meterToInch()">Meter to Inch</button>
+        <br />
+      </div>
+    </div>
+    <hr />
+    <br />
+    <footer>
+      <div class="row">
+        <div
+          class="
+            col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6
+            d-flex
+            justify-content-center
+          "
+        >
+          <p>
+            Created by ❤️
+            <a
+              href="https://server.msikhan.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Samiul Alim Khan</a
+            >
+          </p>
+        </div>
+        <div
+          class="
+            col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6
+            d-flex
+            justify-content-center
+          "
+        >
+          <p>
+            Mail: <a href="mailto:72shahid@gmail.com">72shahid@gmail.com </a>😊
+            <a
+              href="https://www.facebook.com/shahidulislam.khan.7/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/calculator.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
